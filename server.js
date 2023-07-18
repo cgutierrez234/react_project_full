@@ -10,21 +10,21 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 const { Pool } = pg;
-// const dbConn = new Pool({
-//   connectionString: process.env.DATABASE_URL,
-// });
-
 const pool = new Pool({
-  username: "carlgutierrez",
-  host: "localhost",
-  database: "tasks",
-  password: "password",
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
 });
+
+// const pool = new Pool({
+//   username: "carlgutierrez",
+//   host: "localhost",
+//   database: "tasks",
+//   password: "password",
+//   port: 5432,
+// });
 
 //bring in middleware
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("dist"));
 app.use(cors({ origin: "*" }));
 
 //create routes

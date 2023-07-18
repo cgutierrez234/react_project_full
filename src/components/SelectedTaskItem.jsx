@@ -1,27 +1,39 @@
-const SelectedTaskItem = ({ task, setCurrentTask, setTasks, userInput }) => {
+const SelectedTaskItem = ({
+  task,
+  setCurrentTask,
+  setTasks,
+  userInput,
+  setText,
+}) => {
   const resetCurrentTask = () => {
     setCurrentTask(null);
   };
   const updateTask = async () => {
     const id = task.id;
-    const response = await fetch(`http://localhost:3000/tasks/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({ task: userInput.current.value }),
-    });
+    const response = await fetch(
+      `https://react-project-full.onrender.com/tasks/${id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ task: userInput.current.value }),
+      }
+    );
 
     const data = await response.json();
+    setText("");
     setTasks(data);
     resetCurrentTask();
-    userInput.value = "";
   };
   const deleteTask = async () => {
     const id = task.id;
-    const response = await fetch(`http://localhost:3000/tasks/${id}`, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      `https://react-project-full.onrender.com/tasks/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
 
     const data = await response.json();
     setTasks(data);
