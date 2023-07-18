@@ -2,6 +2,9 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: 1px solid black;
   width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5rem;
 }
 
 .card:hover {
