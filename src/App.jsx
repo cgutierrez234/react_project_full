@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Tasks from "./components/Tasks";
 import InputForm from "./components/InputForm";
 import SelectedTaskItem from "./components/SelectedTaskItem";
-import "./App.css";
+import "./index.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
