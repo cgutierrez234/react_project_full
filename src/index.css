@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
+  width: 40%;
 }
 
 .card {
@@ -11,8 +12,8 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: 1px solid black;
   width: 30%;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
   border-radius: 5rem;
   align-items: center;
 }
@@ -43,4 +44,9 @@
 
 #submitBtn:hover {
   cursor: pointer;
+}
+
+#btnDiv {
+  display: flex;
+  justify-content: space-around;
 }

@@ -44,9 +44,11 @@ const SelectedTaskItem = ({
     <>
       <div className="card" id={task.id}>
         <h1>{task.task}</h1>
-        <button onClick={updateTask}>Update</button>
-        <button onClick={deleteTask}>Delete</button>
-        <button onClick={resetCurrentTask}>Back</button>
+        <div id="btnDiv">
+          <button onClick={updateTask}>Update</button>
+          <button onClick={deleteTask}>Delete</button>
+          <button onClick={resetCurrentTask}>Back</button>
+        </div>
       </div>
     </>
   );
