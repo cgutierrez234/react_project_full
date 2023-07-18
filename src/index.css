@@ -38,6 +38,7 @@
   background: rgba(20, 20, 20, 0);
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 #submitBtn:hover {
@@ -46,5 +47,6 @@
 
 #btnDiv {
   display: flex;
-  justify-content: space-around;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
 }
