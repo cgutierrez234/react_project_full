@@ -19,25 +19,29 @@ function App() {
     getData();
   }, [tasks]);
   return (
-    <div id="container">
-      <InputForm
-        userInput={userInput}
-        setTasks={setTasks}
-        text={text}
-        setText={setText}
-      />
-      {currentTask ? (
-        <SelectedTaskItem
-          task={currentTask}
-          setCurrentTask={setCurrentTask}
-          setTasks={setTasks}
+    <>
+      <div id="inputContainer">
+        <InputForm
           userInput={userInput}
+          setTasks={setTasks}
+          text={text}
           setText={setText}
         />
-      ) : (
-        <Tasks tasks={tasks} setCurrentTask={setCurrentTask} />
-      )}
-    </div>
+      </div>
+      <div id="tasksContainer">
+        {currentTask ? (
+          <SelectedTaskItem
+            task={currentTask}
+            setCurrentTask={setCurrentTask}
+            setTasks={setTasks}
+            userInput={userInput}
+            setText={setText}
+          />
+        ) : (
+          <Tasks tasks={tasks} setCurrentTask={setCurrentTask} />
+        )}
+      </div>
+    </>
   );
 }
 
