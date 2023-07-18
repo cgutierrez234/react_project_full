@@ -1,3 +1,8 @@
+#container {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -7,7 +12,6 @@
   margin-bottom: 1rem;
   border-radius: 5rem;
   justify-content: center;
-  text-align: center;
 }
 
 .card:hover {

@@ -19,7 +19,7 @@ function App() {
     getData();
   }, [tasks]);
   return (
-    <>
+    <div id="container">
       <InputForm
         userInput={userInput}
         setTasks={setTasks}
@@ -37,7 +37,7 @@ function App() {
       ) : (
         <Tasks tasks={tasks} setCurrentTask={setCurrentTask} />
       )}
-    </>
+    </div>
   );
 }
 
