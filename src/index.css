@@ -35,6 +35,7 @@ body {
   background-color: #c5fad5;
   font-size: 22px;
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #textInput:focus {
@@ -48,6 +49,8 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1.75rem;
+  background-color: #ffffd2;
+  font-size: 18px;
 }
 
 #submitBtn:hover {
