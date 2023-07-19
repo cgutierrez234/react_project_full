@@ -62,4 +62,18 @@ body {
 
 #updateBtn {
   background-color: #c5fad5;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#deleteBtn {
+  background-color: #c5fad5;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#backBtn {
+  background-color: #c5fad5;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
