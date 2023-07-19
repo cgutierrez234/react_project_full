@@ -31,7 +31,7 @@ const InputForm = ({ userInput, setTasks, text, setText }) => {
         onChange={handleChange}
         value={text}
         ref={userInput}
-        placeholder="update/create tasks here"
+        placeholder="update/create tasks"
       />
       <input type="submit" id="submitBtn" />
     </form>
