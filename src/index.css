@@ -50,11 +50,14 @@ body {
   margin-bottom: 1rem;
   margin-left: 1.75rem;
   background-color: #ffffd2;
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
 #submitBtn:hover {
   cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #btnDiv {
