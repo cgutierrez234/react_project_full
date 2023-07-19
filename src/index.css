@@ -1,3 +1,7 @@
+body {
+  background-color: #c5fad5;
+}
+
 #tasksContainer {
   display: flex;
   flex-direction: column;
@@ -14,6 +18,7 @@
   margin-bottom: 0.35rem;
   border-radius: 5rem;
   align-items: center;
+  background-color: #ffffd2;
 }
 
 .card:hover {
